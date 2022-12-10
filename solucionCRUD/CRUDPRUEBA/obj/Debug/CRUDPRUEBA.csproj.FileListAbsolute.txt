@@ -1,0 +1,14 @@
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\bin\Debug\CRUDPRUEBA.exe.config
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\bin\Debug\CRUDPRUEBA.exe
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\bin\Debug\CRUDPRUEBA.pdb
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\obj\Debug\CRUDPRUEBA.csprojAssemblyReference.cache
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\obj\Debug\CRUDPRUEBA.Form1.resources
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\obj\Debug\CRUDPRUEBA.Properties.Resources.resources
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\obj\Debug\CRUDPRUEBA.Registrar.resources
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\obj\Debug\CRUDPRUEBA.csproj.GenerateResource.cache
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\obj\Debug\CRUDPRUEBA.csproj.CoreCompileInputs.cache
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\obj\Debug\CRUDPRUEBA.exe
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\obj\Debug\CRUDPRUEBA.pdb
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\obj\Debug\CRUDPRUEBA.Cliente.resources
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\obj\Debug\CRUDPRUEBA.Menu.resources
+C:\CRUDVENTA\solucionCRUD\CRUDPRUEBA\obj\Debug\CRUDPRUEBA.consultar.resources
