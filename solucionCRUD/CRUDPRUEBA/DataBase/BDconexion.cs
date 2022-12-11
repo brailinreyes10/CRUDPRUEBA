@@ -11,13 +11,11 @@ namespace CRUDPRUEBA
     {
         public static SqlConnection ObtnerConexion()
         {
-            SqlConnection Conexion = new SqlConnection("server=LAPTOP-KQH2TR9E; database=CRUDVENTA; integrated security=true");
+            SqlConnection Conexion = new SqlConnection("server=PC-BMRD\\PCSERVER; database=CRUDVENTA; integrated security=true");
             Conexion.Open();
 
             return Conexion;
 
         }
-
-
     }
 }

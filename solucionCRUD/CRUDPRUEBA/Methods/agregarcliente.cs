@@ -9,18 +9,15 @@ namespace CRUDPRUEBA
 {
     public class agregarcliente
     {
-        
-        public static int agregar (Agredarcliente pcliente)
+        public static int agregar(Agredarcliente pcliente)
         {
             int retorno = 0;
             using (SqlConnection Conexion = BDComun.ObtnerConexion())
             {
-                SqlCommand Comando=new SqlCommand(string.Format("Insert into cliente (cedula, nombre, apellido, ocupacion, sexo) values ('{0}', '{1}', '{2}', '{3}', '{4}')", 
+                SqlCommand Comando = new SqlCommand(string.Format("Insert into cliente (cedula, nombre, apellido, ocupacion, sexo) values ('{0}', '{1}', '{2}', '{3}', '{4}')",
                     pcliente.cedula, pcliente.nombre, pcliente.apellido, pcliente.ocupacion, pcliente.sexo), Conexion);
 
                 retorno = Comando.ExecuteNonQuery();
-                
-                
             }
             return retorno;
 
@@ -42,8 +39,8 @@ namespace CRUDPRUEBA
 
                 SqlDataReader reader = Comando.ExecuteReader();
 
-                while (reader.Read()) 
-                    {
+                while (reader.Read())
+                {
                     Agredarcliente cliente = new Agredarcliente();
                     cliente.idcliente = reader.GetInt64(0);
                     cliente.cedula = reader.GetString(1);
@@ -53,15 +50,10 @@ namespace CRUDPRUEBA
                     cliente.sexo = reader.GetString(5);
 
                     lista.Add(cliente);
-
-                     
                 }
                 Conexion.Close();
                 return lista;
-
             }
         }
-
-
     }
 }

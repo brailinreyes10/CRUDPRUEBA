@@ -9,7 +9,7 @@ namespace CRUDPRUEBA
 {
     class limpiar
     {
-        public void limiarpampos (Control control)
+        public void limpiarCampos (Control control)
         {
             foreach(var txt in control.Controls)
             {

@@ -17,16 +17,21 @@ namespace CRUDPRUEBA
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            if(UsuarioRegis.Autentificar(txtusuario.Text,txtcontraseña.Text) >0)
-                {
+            btniniciarsesion.Enabled = false;
+        }
+
+        private void btniniciarsesion_Click(object sender, EventArgs e)
+        {
+            if (UsuarioRegis.Autenticar(txtusuario.Text, txtcontraseña.Text) > 0)
+            {
                 this.Hide();
                 Menu f = new Menu();
                 f.ShowDialog();
             }
             else
-                MessageBox.Show("¡Usuario/Contraseña Incorrecto!");
+                MessageBox.Show("¡Usuario/Contraseña Incorrecto!"); Clean();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -36,12 +41,7 @@ namespace CRUDPRUEBA
             f.ShowDialog();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            btniniciarsesion.Enabled = false;
-        }
-
-        private void validarcompos()
+        private void validarCampos()
         {
             var vr = !string.IsNullOrEmpty(txtusuario.Text) &&
                 !string.IsNullOrEmpty(txtcontraseña.Text);
@@ -50,17 +50,23 @@ namespace CRUDPRUEBA
 
         private void txtusuario_TextChanged(object sender, EventArgs e)
         {
-            validarcompos();
+            validarCampos();
         }
 
         private void txtcontraseña_TextChanged(object sender, EventArgs e)
         {
-            validarcompos();
+            validarCampos();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void Clean()
+        {
+            txtusuario.Text = txtcontraseña.Text = String.Empty;
+            txtusuario.Focus();
         }
     }
 }
